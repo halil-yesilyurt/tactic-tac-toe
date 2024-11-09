@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Player from './components/Player.jsx';
 import GameBoard from './components/GameBoard.jsx';
 import GameOver from './components/GameOver.jsx';
+import Log from './components/Log.jsx';
 import { WIN_CONDITIONS } from './win-conditions.js';
 
 const PLAYERS = {
