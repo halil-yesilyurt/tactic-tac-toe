@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import Player from './components/Player.jsx';
 import GameBoard from './components/GameBoard.jsx';
+import GameOver from './components/GameOver.jsx';
+import { WIN_CONDITIONS } from './win-conditions.js';
 
 const PLAYERS = {
   X: 'Player 1',
@@ -63,6 +65,10 @@ function App() {
 
       return [newTurn, ...previousTurns];
     });
+  }
+
+  function restartGame() {
+    setGameTurns([]);
   }
 
   function handlePlayersName(symbol, newName) {
