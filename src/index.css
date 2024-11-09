@@ -209,6 +209,23 @@ ol {
 #game-over button:hover::after {
   opacity: 0.8;
 }
+#player-log {
+  max-width: 200px;
+  color: #353535;
+  list-style: none;
+  margin: 2rem auto;
+  padding: 0;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: -50%;
+  transform: translateX(-100%);
+  font-weight: 500;
+}
+#player-log li {
+  animation: slide-from-left 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  margin: 1rem;
+}
 @keyframes slide-from-left {
   0% {
     opacity: 0;
