@@ -28,8 +28,40 @@ function generateGameBoard(gameTurns) {
   return gameBoard;
 }
 
+function determineWinner(gameBoard, players) {
+  for (const combination of WIN_CONDITIONS) {
+    const [first, second, third] = combination;
+
+    const firstSymbol = gameBoard[first.row][first.column];
+    const secondSymbol = gameBoard[second.row][second.column];
+    const thirdSymbol = gameBoard[third.row][third.column];
+
+    if (firstSymbol && firstSymbol === secondSymbol && firstSymbol === thirdSymbol) {
+      return players[firstSymbol];
+    }
+  }
+
+  return null;
+}
+
 function App() {
   const [players, setPlayers] = useState(PLAYERS);
+  const [gameTurns, setGameTurns] = useState([]);
+
+  const activePlayer = getActivePlayer(gameTurns);
+  const gameBoard = generateGameBoard(gameTurns);
+
+  function handleSelectSquare(rowIndex, colIndex) {
+    setGameTurns((previousTurns) => {
+      const currentPlayer = getActivePlayer(previousTurns);
+      const newTurn = {
+        square: { row: rowIndex, col: colIndex },
+        player: currentPlayer,
+      };
+
+      return [newTurn, ...previousTurns];
+    });
+  }
 
   function handlePlayersName(symbol, newName) {
     setPlayers((prevPlayers) => {
