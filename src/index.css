@@ -108,7 +108,39 @@ ol {
   margin: 0;
   padding: 0;
 }
-
+#game-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem 0;
+  padding: 0;
+  flex-direction: column;
+}
+#game-board ol {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+#game-board button {
+  width: 8rem;
+  height: 8rem;
+  border: none;
+  background-color: rgba(211, 211, 211, 0.8);
+  color: #3f3b00;
+  font-size: 6rem;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+#game-board button[disabled] {
+  cursor: default;
+}
 @keyframes pulse-animation {
   0% {
     border-color: #457b9d;
