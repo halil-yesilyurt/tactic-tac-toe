@@ -273,3 +273,42 @@ ol {
     transform: scale(1);
   }
 }
+@media only screen and (max-width: 950px) {
+  #player-log {
+    left: 50%;
+    right: initial;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+  #game-container {
+    padding-inline: 1rem;
+  }
+  #game-board button {
+    width: 6rem;
+    height: 6rem;
+    font-size: 4rem;
+  }
+  #game-board,
+  #game-board ol {
+    gap: 1rem;
+  }
+  .player-name,
+  .player input {
+    width: 8rem;
+  }
+  #game-over h2 {
+    font-size: 3rem;
+  }
+  #game-over p {
+    font-size: 1.6rem;
+  }
+  #game-over button {
+    padding-inline: 2rem;
+  }
+}
