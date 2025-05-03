@@ -9,7 +9,7 @@ html {
   overflow: hidden scroll;
 }
 body {
-  background: radial-gradient(circle at top, rgba(173, 216, 230, 0.98), rgb(70 130 180 / 84%)), url(./public/tic-tac-toe.png) center repeat;
+  background: radial-gradient(circle at top, rgba(173, 216, 230, 0.98), rgb(70 130 180 / 84%)), url(/tic-tac-toe.png) center repeat;
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
