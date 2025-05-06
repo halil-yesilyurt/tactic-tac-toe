@@ -11,7 +11,7 @@
 - **Rematch Option:** Players can start a new game (rematch) to play again after the game is completed.
 
 <p align="center">
-    <img src="./dist/assets/screenshot1.png" alt="tactic tac toe game layout" width="500"/>
+    <img src="./docs/assets/screenshot1.png" alt="tactic tac toe game layout" width="500"/>
 </p>
 
 ## Getting Started
@@ -70,7 +70,7 @@ http://localhost:3000
 5. Rematch: You can start a new game (rematch) to play again after the game is completed.
 
 <p align="center">
-    <img src="./dist/assets/screenshot2.png" alt="tactic tac toe game over" width="500"/>
+    <img src="./docs/assets/screenshot2.png" alt="tactic tac toe game over" width="500"/>
 </p>
 
 ### Technologies Used
