@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --bg-image: url('/tactic-tac-toe/assets/tic-tac-toe.png');
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,7 +14,7 @@ html {
   overflow: hidden scroll;
 }
 body {
-  background: radial-gradient(circle at top, rgba(173, 216, 230, 0.98), rgb(70 130 180 / 84%)), url(./assets/tic-tac-toe.png) center repeat;
+  background: radial-gradient(circle at top, rgba(173, 216, 230, 0.98), rgb(70 130 180 / 84%)), var(--bg-image) center repeat;
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
